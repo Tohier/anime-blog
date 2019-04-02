@@ -1,0 +1,20 @@
+{
+    "posts": [
+        {
+            "id": "1",
+            "date": "feb",
+            "title": "anime",
+            "image": "img",
+            "desc": "anime text",
+            "author": "Tohier"
+        },
+        {
+            "id2": "2",
+            "date2": "march",
+            "title2": "anime2",
+            "image": "img2",
+            "desc": "anime text 2",
+            "author": "Tohier"
+        }
+    ]
+}

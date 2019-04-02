@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+     
+      <div class="menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="sidenav">
+        <div class="sidenav-panel">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#" class="archive">Archive</a>
+            </li>
+            
+            </ul> 
+            <span class="underline"></span>
+        </div>
+      </div>
+<script>
+  $('.menu').click(function () {
+    $(this).toggleClass("change");
+    $('.sidenav').toggleClass("showmenu");
+  });
+
+  $('.work').click(function () {
+    $(this).append(
+      '');
+  });
+</script>
+    </header>
+  </body>
+</html>
