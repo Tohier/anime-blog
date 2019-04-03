@@ -1,0 +1,52 @@
+
+.smoke{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  & span{
+    position:relative;
+    font-family: "naruto" !important;
+    color: orange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px red;
+    font-weight:bold;
+    text-transform:Uppercase;
+    letter-spacing:10px;
+    font-size: 5rem;
+    animation: animate 3s linear;
+    &:nth-child(1){
+      animation-delay:0s;
+    }
+    &:nth-child(2){
+      animation-delay:0.1s;
+    }
+    &:nth-child(3){
+      animation-delay:0.2s;
+    }
+    &:nth-child(4){
+      animation-delay:0.2s;
+    }
+    &::nth-child(5){
+        animation-delay:0.4s;
+    }
+  }
+  
+}
+@keyframes animate {
+  0%{
+    filter: blur(0px)
+  }
+    25%{
+    filter: blur(20px)
+  }
+    50%{
+    filter: blur(0px)
+  }
+    75%{
+    filter: blur(0px)
+    }
+    100%{
+    filter: blur(0px)
+  }
+}

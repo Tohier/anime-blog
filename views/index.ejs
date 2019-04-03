@@ -2,13 +2,15 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-     
       <div class="menu">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -22,23 +24,36 @@
             <li>
               <a href="#" class="archive">Archive</a>
             </li>
+            <li><a href="">Post</a></li>
             <li><button>Sign up</button></li>
             <li><button>Login</button></li>
-            </ul> 
-            <span class="underline"></span>
+          </ul>
+          <span class="underline"></span>
         </div>
       </div>
-<script>
-  $('.menu').click(function () {
-    $(this).toggleClass("change");
-    $('.sidenav').toggleClass("showmenu");
-  });
+      <script>
+        $(".menu").click(function() {
+          $(this).toggleClass("change");
+          $(".sidenav").toggleClass("showmenu");
+        });
 
-  $('.work').click(function () {
-    $(this).append(
-      '');
-  });
-</script>
+        $(".work").click(function() {
+          $(this).append("");
+        });
+      </script>
+<!-- end of the navbar -->
+
+        <div class="smoke">
+          <span>W</span>
+          <span>E</span>
+          <span>E</span>
+          <span>B</span>
+          <span>P</span>
+          <span>E</span>
+          <span>D</span>
+          <span>I</span>
+          <span>A</span>
+        </div>
     </header>
   </body>
 </html>
