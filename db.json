@@ -2,19 +2,19 @@
     "posts": [
         {
             "id": "1",
-            "date": "feb",
-            "title": "anime",
-            "image": "img",
-            "desc": "anime text",
-            "author": "Tohier"
+            "date": "2 April",
+            "title": "Black Clover Teases Yuno's new power.",
+            "image": "https://media.comicbook.com/2019/04/spirit-dive-yuno-black-clover-anime-1165555.jpeg",
+            "desc": "Black Clover is in the midst of the Royal Knights arc in the anime series, and thus is in the middle of a fierce tournament where many new powers and characters will be tested.",
+            "author": "Toyer"
         },
         {
-            "id2": "2",
-            "date2": "march",
-            "title2": "anime2",
-            "image": "img2",
-            "desc": "anime text 2",
-            "author": "Tohier"
+            "id": "2",
+            "date": "2 April ",
+            "title": "'One Piece' Reveals Sanji's New Bounty",
+            "image": "https://imgix.ranker.com/user_node_img/50081/1001612750/original/tears-of-a-women-and-_39_s-eyes-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces",
+            "desc": "Before the events of One Piece's Whole Cake Island arc revealed more about his past, Sanji's wanted poster was an interesting mystery. He had a bounty of 177 million belly, and could only be taken in alive when the rest of his crew was labeled as dead or alive.",
+            "author": "Nick Valdez"
         }
     ]
 }

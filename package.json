@@ -14,12 +14,13 @@
     "http-errors": "~1.6.2",
     "jquery": "^3.3.1",
     "morgan": "~1.9.0",
-    "nodemon": "^1.18.10",
     "popper.js": "^1.14.7"
   },
   "description": "project 4 creating a blog",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tohier/anime-blog.git"

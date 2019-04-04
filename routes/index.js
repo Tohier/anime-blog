@@ -8,10 +8,11 @@ router.get("/", function(req, res, next) {
 
   var data = {
     title: "Anime",
-    posts: Posts,
+    blog: Posts,
     message: false
   };
   res.render("index", data);
 });
 
 module.exports = router;
+  

@@ -13,8 +13,8 @@
   z-index: 5;
   font-size: 10px;
   position: fixed;
-  top: 20px;
-  left: 25px;
+  top: 5%;
+  left: 97%;
   cursor: pointer;
 }
 .bar1,
@@ -53,6 +53,7 @@
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
+  left: 83%;
   opacity: 0;
   width: 250px;
   transform: translateX(-100%);

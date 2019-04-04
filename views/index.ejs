@@ -3,6 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -44,16 +46,41 @@
 <!-- end of the navbar -->
 
         <div class="smoke">
-          <span>W</span>
-          <span>E</span>
-          <span>E</span>
-          <span>B</span>
-          <span>P</span>
-          <span>E</span>
-          <span>D</span>
-          <span>I</span>
           <span>A</span>
+          <span>N</span>
+          <span>I</span>
+          <span>M</span>
+          <span>E</span>
+          <br>
+          <span>O</span>
+          <span>V</span>
+          <span>E</span>
+          <span>R</span>
+          <span>L</span>
+          <span>O</span>
+          <span>A</span>
+          <span>D</span>
         </div>
     </header>
+
+    <% blog.posts.forEach(function (item) {  %>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="<%= item.image %>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%= item.title %></h5>
+        <p class="card-text"><%= item.desc %>
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><%= item.date %></li>
+        <li class="list-group-item" style="padding-left: 7.25rem;"><%= item.author %></li>  
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+    <% }); %>
   </body>
 </html>
