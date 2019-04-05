@@ -10,6 +10,12 @@
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -63,24 +69,31 @@
         </div>
     </header>
 
+    <section class="blog-posts">
     <% blog.posts.forEach(function (item) {  %>
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="<%= item.image %>" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title"><%= item.title %></h5>
-        <p class="card-text"><%= item.desc %>
-        </p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item"><%= item.date %></li>
-        <li class="list-group-item" style="padding-left: 7.25rem;"><%= item.author %></li>  
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
-      </div>
-    </div>
 
+    <div class="card">
+      <div class="card-group">
+        <div class="card">
+          <div class="blog-img"><img class="card-img-top" src="<%= item.image %>" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title"><%= item.title %></h5>
+            <p class="card-text"><%= item.desc %>.</p>
+            <div class="collapse" id="collapseExample">          
+                <%= item.extra %>
+    
+            </div>
+            <p class="card-text"><small class="text-muted"><%= item.date %> <span><%= item.author %></span></small></p>
+            
+            <button type="button" data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              Read more
+            </button>
+          </div>
+        </div>
     <% }); %>
+    </section>
+
+    
   </body>
 </html>
