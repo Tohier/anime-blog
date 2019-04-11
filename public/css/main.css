@@ -473,7 +473,7 @@ footer {
 .bar2,
 .bar3 {
   height: 0.5em;
-  width: 3em;
+  width: 2em;
   border-radius: 0.1em;
   background-color: var(--main);
   /*color1*/
